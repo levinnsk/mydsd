@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.online {
+  background-color: rgb(72, 230, 169);
+}
+
+.offline {
+  background-color: rgb(245, 133, 133);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.eventBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.text {
+    display: flex;
+    justify-content: start;
+    
+}
