@@ -35,6 +35,7 @@ export async function createUpd(
     if (!newUpd.ok) {
       return { isError: true, message: "Ошибка сохранения" };
     }
+    revalidateTag("upds")
     return { isError: false, message: "Устройство добавлено" };
   } catch (error) {
     return { isError: true, data: null, message: getErrorMessage(error) };

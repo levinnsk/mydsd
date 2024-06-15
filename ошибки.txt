@@ -1,3 +1,0 @@
-
-
-1. Не приходит значение emailVerified user'а из функции getCurrentUser в services

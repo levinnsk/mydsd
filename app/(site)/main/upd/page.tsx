@@ -16,6 +16,7 @@ type Upds = {
 
 export default async function Upd() {
   const upds: Array<Upds> = await getUpds();
+  console.log("upds", upds)
   return (
     <div>
       <div className="">
