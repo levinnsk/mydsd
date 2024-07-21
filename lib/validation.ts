@@ -1,11 +1,7 @@
 import { zfd } from "zod-form-data";
 import { z } from "zod";
 
-export const schemaFormAuth = zfd.formData({
-  email: zfd.text(
-    z.string({ message: "Обязательное поле" }).email("Не верный email адрес")
-  ),
-});
+
 
 export const schemaFormProfile = zfd.formData({
   firstname: zfd.text(

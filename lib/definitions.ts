@@ -1,7 +1,3 @@
-export type FormInputAuth = {
-  email: string;
-};
-
 export type FormProfile = {
   firstname: string;
   patronymic: string;

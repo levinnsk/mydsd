@@ -1,10 +1,10 @@
 "use client";
-import { schemaFormAuth } from "@/lib/validation";
-import { useForm } from "react-hook-form";
-import { FormInputAuth } from "@/lib/definitions";
-import { zodResolver } from "@hookform/resolvers/zod";
 import { ErrorMessage } from "@hookform/error-message";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useFormStatus } from "react-dom";
+import { useForm } from "react-hook-form";
+import { FormInputAuth } from "./lib/definations";
+import { schemaFormAuth } from "./lib/validation";
 
 function SubmitButtonEmail({ isValid }: { isValid: boolean }) {
   const { pending } = useFormStatus();
