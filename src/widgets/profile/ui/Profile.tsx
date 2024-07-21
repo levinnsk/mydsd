@@ -28,7 +28,7 @@ function SubmitButton({ isValid }: { isValid: boolean }) {
   );
 }
 
-export default function Profile({
+const Profile = ({
   firstname,
   patronymic,
   lastname,
@@ -36,7 +36,7 @@ export default function Profile({
   email,
   mobilePhoneVerify,
   emailVerified,
-}: FormProfile) {
+}: FormProfile) => {
   const {
     register,
     formState: { isValid, errors },
@@ -244,4 +244,6 @@ export default function Profile({
       </div>
     </div>
   );
-}
+};
+
+export default Profile;

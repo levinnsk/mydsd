@@ -1,5 +1,5 @@
 import MenuLeft from "@/components/menu/menu-left";
-import MainHeader from "@/components/header/main-header";
+import MainHeader from "@/src/widgets/header/main-header";
 export default function MainLayout({
   modal,
   children,

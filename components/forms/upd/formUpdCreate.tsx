@@ -7,7 +7,7 @@ import { ErrorMessage } from "@hookform/error-message";
 import { useFormState } from "react-dom";
 import { createUpd } from "@/lib/actions/updAction";
 import { UPD_MANUFACTURE, UPD_MODEL } from "@/utils/constants";
-import SubmitButton from "../../button/submitButton";
+import SubmitButton from "../../../src/shared/button/submitButton";
 
 export default function FormUpdCreate({
   textButton

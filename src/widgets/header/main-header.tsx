@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { signOut } from "@/auth";
-import MenuTop from "../menu/menu-top";
+import MenuTop from "../../../components/menu/menu-top";
 export default function MainHeader() {
   return (
     <header className="p-4 dark:bg-gray-100 dark:text-gray-800">

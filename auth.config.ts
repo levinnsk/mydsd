@@ -16,7 +16,7 @@ export const authConfig = {
       const mobilePhoneVerify = auth?.user.mobilePhoneVerify!;
       console.log('mobilePhoneVerify auth.config =', (mobilePhoneVerify) ? "true" : "false")
 
-      // исправить
+      // исправить //здесь проверку верификации почты и телефона!!!
       if (isOnDashboard) {
         if (isLoggedIn) return true; //Добавь проверку &&
         return false; // Redirect unauthenticated users to login page

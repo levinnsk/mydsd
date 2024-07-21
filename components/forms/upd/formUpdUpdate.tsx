@@ -7,7 +7,7 @@ import { ErrorMessage } from "@hookform/error-message";
 import { useFormState } from "react-dom"; //переименован в useActionState 
 import { updateUpd } from "@/lib/actions/updAction";
 import { UPD_MANUFACTURE, UPD_MODEL } from "@/utils/constants";
-import SubmitButton from "../../button/submitButton";
+import SubmitButton from "../../../src/shared/button/submitButton";
 import { TUpd } from "@/lib/definitions";
 
 export default function FormUpdUpdate({ upd, textButton }: { upd: TUpd, textButton: string }) {

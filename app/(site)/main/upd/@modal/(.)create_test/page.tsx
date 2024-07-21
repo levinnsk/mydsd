@@ -1,4 +1,4 @@
-import Modal from "@/ui/modal/modal";
+import Modal from "@/src/shared/modal/modal";
 import FormUpdCreate from "@/components/forms/upd/formUpdCreate";
 
 export default function CreateUpd() {

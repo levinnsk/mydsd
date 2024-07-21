@@ -3,10 +3,11 @@ import styles from "./styles.module.css";
 import Tooltip from "@mui/material/Tooltip";
 import { Pencil, TrashBin } from "@gravity-ui/icons";
 import { TUpd } from "@/lib/definitions";
-import Modal from "@/ui/modal/modal";
+import Modal from "@/src/shared/modal/modal";
 import { useState } from "react";
 import { delUpd } from "@/lib/actions/updAction";
 import FormUpdUpdate from "../forms/upd/formUpdUpdate";
+
 export default function CardUpd({ upds }: any) {
   // исправить!!!
   const [isOpenCardDelete, setOpenCardDelete] = useState(false);
