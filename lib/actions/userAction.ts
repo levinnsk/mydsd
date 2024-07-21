@@ -1,8 +1,8 @@
 "use server";
-import { FormStateUserProfile } from "../definitions";
+import { revalidateTag } from "next/cache";
 import { auth } from "@/auth";
 import { getErrorMessage } from "@/utils";
-import { revalidateTag } from "next/cache";
+import { FormStateUserProfile } from "../definitions";
 
 //новое
 export async function getSmsCode(tel: string) {
@@ -45,21 +45,7 @@ export async function onVerifedMobile(tel: string) {
 }
 
 //новый
-export async function getUser() {
-  try {
-    const session = await auth();
-    const findUser = await fetch("http://localhost:3000/api/user/", {
-      headers: {
-        "Content-Type": "application/json",
-        id: session?.user.id,
-      },
-      next: { tags: ["user"] },
-    });
-    return findUser.json();
-  } catch (error) {
-    console.log("error =", error);
-  }
-}
+
 
 //новый
 export async function updateUser(
